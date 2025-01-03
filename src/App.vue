@@ -49,13 +49,13 @@ const accept = () => {
     </div>
   </div>
   <div v-if="step === 2" class="container">
-    <h2>Eu sabia que você não iria resistir, hahahah!</h2>
+    <h2>Eu sabia que você não iria resistir, hahahaha!</h2>
     <h3>Já manda msg no whatsapp! Até breve!!! 🤪</h3>
     <!-- Botão com o link -->
-    <a href="https://api.whatsapp.com/send?phone=5521990281466&text=Estou%20pronto%20para%20saber%20mais!" 
+    <a href="https://api.whatsapp.com/send?phone=5521990281466&text=BORA%BEBEEEERRRRR!!!!!!!" 
        target="_blank" 
        class="info-button">
-      Clique aqui para falar no WhatsApp
+      Bora!!!
     </a>
   </div>
 </template>
