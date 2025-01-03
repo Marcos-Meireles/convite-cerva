@@ -52,7 +52,7 @@ const accept = () => {
     <h2>Eu sabia que você não iria resistir, hahahaha!</h2>
     <h3>Já manda msg no whatsapp! Até breve!!! 🤪</h3>
     <!-- Botão com o link -->
-    <a href="https://api.whatsapp.com/send?phone=5521990281466&text=BORA%BEBEEEERRRRR!!!!!!!" 
+    <a href="https://api.whatsapp.com/send?phone=5521990281466&text=BORA%20BEBEEEERRRRR!!!!!!!" 
        target="_blank" 
        class="info-button">
       Bora!!!
