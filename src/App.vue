@@ -50,12 +50,15 @@ const accept = () => {
   </div>
   <div v-if="step === 2" class="container">
     <h2>Eu sabia que você não iria resistir, hahahah!</h2>
-    <h3>Mandarei mais informações no whatsapp! Até breve!!! 🤪</h3>
-
+    <h3>Já manda msg no whatsapp! Até breve!!! 🤪</h3>
+    <!-- Botão com o link -->
+    <a href="https://api.whatsapp.com/send?phone=5521990281466&text=Estou%20pronto%20para%20saber%20mais!" 
+       target="_blank" 
+       class="info-button">
+      Clique aqui para falar no WhatsApp
+    </a>
   </div>
 </template>
-
-
 
 <style>
 .container {
@@ -97,5 +100,21 @@ button:hover {
 .no-button {
   background-color: #ffcccc;
   position: absolute;
+}
+
+.info-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #25D366;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.info-button:hover {
+  background-color: #1da851;
 }
 </style>
