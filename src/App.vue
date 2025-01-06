@@ -21,7 +21,7 @@
     <img src="https://oyster.ignimgs.com/mediawiki/apis.ign.com/league-of-legends/a/a6/Gragas_lol.jpg" alt="Gragas chamando para beber" class="invitation-image"/> 
     <h3>Já manda msg no whatsapp! Até breve!!! 🤪</h3>
     <!-- Botão com o link -->
-    <a href="https://api.whatsapp.com/send?phone=${import.meta.env.WHATSAPP_NUMBER}&text=BORA%20BEBEEEERRRRR!!!!!!!" 
+    <a href="https://api.whatsapp.com/send?phone=${whatsappNumber}&text=BORA%20BEBEEEERRRRR!!!!!!!" 
        target="_blank" 
        class="info-button">
       Bora!!!
