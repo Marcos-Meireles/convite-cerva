@@ -35,14 +35,6 @@ h1 {
   line-height: 1.1;
 }
 
-h1 {
-  margin-bottom: 20px; /* Espaço entre o h1 e o h2 */
-}
-
-h2.invitation {
-  margin-top: 0; /* Remover qualquer margem automática no topo */
-}
-
 button {
   border-radius: 8px;
   border: 1px solid transparent;

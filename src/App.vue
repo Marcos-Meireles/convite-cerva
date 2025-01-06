@@ -75,7 +75,18 @@ h1 {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  padding: 10px 20px; 
+  padding: 10px 20px;
+  border-bottom: 2px solid #333;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  position: fixed;
+  top: 4rem;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
   border-bottom: 2px solid #333;
 }
 
