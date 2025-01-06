@@ -74,8 +74,7 @@ h1 {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  padding: 10px 20px;
-  background-color: rgba(255, 255, 255, 0.8); 
+  padding: 10px 20px; 
   border-bottom: 2px solid #333;
 }
 
