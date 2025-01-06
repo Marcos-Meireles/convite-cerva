@@ -13,15 +13,15 @@
       </button>
     </div>
   </div>
-  <img src="https://oyster.ignimgs.com/mediawiki/apis.ign.com/league-of-legends/a/a6/Gragas_lol.jpg" alt="Gragas chamando para beber" class="invitation-image"/> 
   <div v-if="step === 1" class="container">
     <h2 class="invitation">Vamo tomar uma???? 🍻🍻</h2>
   </div>
   <div v-if="step === 2" class="container">
     <h2>Eu sabia que você não iria resistir, hahahaha!</h2>
+    <img src="https://oyster.ignimgs.com/mediawiki/apis.ign.com/league-of-legends/a/a6/Gragas_lol.jpg" alt="Gragas chamando para beber" class="invitation-image"/> 
     <h3>Já manda msg no whatsapp! Até breve!!! 🤪</h3>
     <!-- Botão com o link -->
-    <a href="https://api.whatsapp.com/send?phone=5521990281466&text=BORA%20BEBEEEERRRRR!!!!!!!" 
+    <a href="https://api.whatsapp.com/send?phone=${import.meta.env.WHATSAPP_NUMBER}&text=BORA%20BEBEEEERRRRR!!!!!!!" 
        target="_blank" 
        class="info-button">
       Bora!!!
