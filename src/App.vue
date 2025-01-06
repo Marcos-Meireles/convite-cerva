@@ -1,7 +1,7 @@
 <template>
   <div v-if="step === 1" class="container">
-    <h1> Venho aqui para realizar um convite especial organizado pelos deuses da bebedeira!
-    Vamo tomar uma???? 🍻🍻</h1>
+    <h1> Venho aqui para realizar um convite especial organizado pelos deuses da bebedeira!</h1>
+    <p>Vamo tomar uma???? 🍻🍻</p>
     <div class="buttons">
       <button class="accept-button" @click="accept">Sim</button>
       <button
