@@ -1,3 +1,29 @@
+<template>
+  <div v-if="step === 1" class="container">
+    <h1>Bora tomar uma, para cima da tela, aumentando a posicao dela</h1>
+    <div class="buttons">
+      <button class="accept-button" @click="accept">Sim</button>
+      <button
+        ref="noButton"
+        @mouseenter="moveButton"
+        class="no-button"
+      >
+        Não
+      </button>
+    </div>
+  </div>
+  <div v-if="step === 2" class="container">
+    <h2>Eu sabia que você não iria resistir, hahahaha!</h2>
+    <h3>Já manda msg no whatsapp! Até breve!!! 🤪</h3>
+    <!-- Botão com o link -->
+    <a href="https://api.whatsapp.com/send?phone=5521990281466&text=BORA%20BEBEEEERRRRR!!!!!!!" 
+       target="_blank" 
+       class="info-button">
+      Bora!!!
+    </a>
+  </div>
+</template>
+
 <script setup lang="ts">
 import { ref } from 'vue';
 
@@ -31,34 +57,8 @@ const moveButton = () => {
 
 const accept = () => {
   step.value = 2;
-
 };
 </script>
-<template>
-  <div v-if="step === 1" class="container">
-    <h1>Bora tomar uma???? 🍻🍻</h1>
-    <div class="buttons">
-      <button class="accept-button" @click="accept">Sim</button>
-      <button
-        ref="noButton"
-        @mouseenter="moveButton"
-        class="no-button"
-      >
-        Não
-      </button>
-    </div>
-  </div>
-  <div v-if="step === 2" class="container">
-    <h2>Eu sabia que você não iria resistir, hahahaha!</h2>
-    <h3>Já manda msg no whatsapp! Até breve!!! 🤪</h3>
-    <!-- Botão com o link -->
-    <a href="https://api.whatsapp.com/send?phone=5521990281466&text=BORA%20BEBEEEERRRRR!!!!!!!" 
-       target="_blank" 
-       class="info-button">
-      Bora!!!
-    </a>
-  </div>
-</template>
 
 <style>
 .container {
@@ -70,6 +70,13 @@ const accept = () => {
 h1 {
   font-size: 2rem;
   margin-bottom: 2rem;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0.8); 
+  border-bottom: 2px solid #333;
 }
 
 .buttons {
@@ -77,7 +84,7 @@ h1 {
   width: 300px;
   height: 200px;
   margin: 0 auto;
-
+  margin-top: 50px;
 }
 
 .accept-button {
