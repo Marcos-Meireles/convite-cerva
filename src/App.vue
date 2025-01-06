@@ -1,3 +1,7 @@
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400&display=swap" rel="stylesheet">
+</head>
+
 <template>
   <div v-if="step === 1" class="container">
     <h1>Venho aqui para realizar um convite especial organizado pelos deuses da bebedeira!</h1>
@@ -13,9 +17,7 @@
       </button>
     </div>
   </div>
-  <div v-if="step === 1" class="container">
-    <h2 class="invitation">Vamo tomar uma???? 🍻🍻</h2>
-  </div>
+
   <div v-if="step === 2" class="container">
     <h2>Eu sabia que você não iria resistir, hahahaha!</h2>
     <h3>Já manda msg no whatsapp! Até breve!!! 🤪</h3>
@@ -65,33 +67,66 @@ const accept = () => {
 </script>
 
 <style>
+/* Definindo o container geral */
 .container {
   text-align: center;
   margin-top: 10%;
   font-family: Arial, sans-serif;
 }
 
+/* Estilo para o H1 */
 h1 {
-  font-size: 2rem;
+  font-family: 'Poppins', sans-serif; /* Fonte Poppins */
+  font-size: 3rem; /* Aumenta o tamanho do título */
+  color: #4CAF50; /* Cor do texto */
   margin-bottom: 2rem;
   position: fixed;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  padding: 10px 20px;
+  padding: 15px 25px;
   border-bottom: 2px solid #333;
+  background-color: rgba(255, 255, 255, 0.8); /* Fundo levemente transparente */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  opacity: 0; /* Inicialmente invisível para animação */
+  animation: fadeIn 1.5s forwards; /* Animação de fade-in */
+  transition: color 0.3s ease, transform 0.3s ease; /* Transições suaves */
 }
 
+/* Animação de Fade-In */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-30px); /* Move o título para cima */
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0); /* Finaliza na posição normal */
+  }
+}
+
+/* Efeito de hover para interação */
+h1:hover {
+  color: #FF5722; /* Muda a cor do texto ao passar o mouse */
+  transform: translateX(-50%) scale(1.1); /* Aumenta um pouco o tamanho */
+  cursor: pointer; /* Muda o cursor para um ponteiro */
+}
+
+/* Estilo para o H2 */
 h2 {
+  font-family: 'Roboto', sans-serif; /* Fonte Roboto */
   font-size: 2rem;
   margin-bottom: 2rem;
   position: fixed;
-  top: 8rem;
+  top: 8rem; /* Ajusta a posição para ficar abaixo do H1 */
   left: 50%;
   transform: translateX(-50%);
   padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0.8); /* Fundo leve */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
+/* Estilo dos botões */
 .buttons {
   position: relative;
   width: 300px;
