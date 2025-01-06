@@ -32,6 +32,14 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 
+const whatsappNumber = ref('');
+
+onMounted(async () => {
+  const response = await fetch('/api/getWhatsAppNumber');
+  const data = await response.json();
+  whatsappNumber.value = data.number;
+});
+
 const noButton = ref<HTMLButtonElement | null>(null);
 const step = ref(1)
 
