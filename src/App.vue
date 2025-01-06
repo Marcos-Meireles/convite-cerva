@@ -1,6 +1,6 @@
 <template>
   <div v-if="step === 1" class="container">
-    <h1>Bora tomar uma, para cima da tela, aumentando a posicao dela</h1>
+    <h1>Bora tomar uma???? 🍻🍻</h1>
     <div class="buttons">
       <button class="accept-button" @click="accept">Sim</button>
       <button
