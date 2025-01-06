@@ -1,6 +1,6 @@
 <template>
   <div v-if="step === 1" class="container">
-    <h1>Bora tomar uma???? 🍻🍻</h1>
+    <h1> Venho aqui para realizar um convite especial organizado pelos deuses da bebedeira. Vamo tomar uma???? 🍻🍻</h1>
     <div class="buttons">
       <button class="accept-button" @click="accept">Sim</button>
       <button
