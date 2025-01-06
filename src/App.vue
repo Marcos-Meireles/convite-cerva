@@ -13,6 +13,11 @@
       </button>
     </div>
   </div>
+
+  <div v-if="step === 1" class="container">
+    <h2 class="invitation">Vamo tomar uma???? 🍻🍻</h2>
+  </div>
+
   <div v-if="step === 2" class="container">
     <h2>Eu sabia que você não iria resistir, hahahaha!</h2>
     <h3>Já manda msg no whatsapp! Até breve!!! 🤪</h3>
