@@ -86,11 +86,10 @@ h2 {
   font-size: 2rem;
   margin-bottom: 2rem;
   position: fixed;
-  top: 4rem;
+  top: 5rem;
   left: 50%;
   transform: translateX(-50%);
   padding: 10px 20px;
-  border-bottom: 2px solid #333;
 }
 
 .buttons {
