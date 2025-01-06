@@ -13,7 +13,7 @@
       </button>
     </div>
   </div>
-  <img src="b8873e36-8058-4e16-81cf-c499323ed0a1.png" alt="Gragas chamando para beber" class="invitation-image"/> 
+  <img src="https://oyster.ignimgs.com/mediawiki/apis.ign.com/league-of-legends/a/a6/Gragas_lol.jpg" alt="Gragas chamando para beber" class="invitation-image"/> 
   <div v-if="step === 1" class="container">
     <h2 class="invitation">Vamo tomar uma???? 🍻🍻</h2>
   </div>
