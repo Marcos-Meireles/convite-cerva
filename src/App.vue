@@ -15,7 +15,7 @@
   </div>
   <img src="b8873e36-8058-4e16-81cf-c499323ed0a1.png" alt="Gragas chamando para beber" class="invitation-image"/> 
   <div v-if="step === 1" class="container">
-    <h2 class="invitation">Vamo tomar uma???? 🍻🍻</h2>
+    <h2 class="invitation">Vamo tomar uma???? b🍻🍻</h2>
   </div>
   <div v-if="step === 2" class="container">
     <h2>Eu sabia que você não iria resistir, hahahaha!</h2>
